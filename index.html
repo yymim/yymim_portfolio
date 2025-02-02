@@ -1,0 +1,160 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>윤영민 포트폴리오</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/aos.css">
+</head>
+<body>
+  <!-- 인트로 -->
+  <div id="intro">
+    <div class="intro-page">
+      <span class="logo"><img src="./img/yymim.png" alt="윤영민" width="688" height="137"></span>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".intro-page").delay(1900).fadeOut(2000, 'swing');
+        $(".intro-page span").delay(300).animate({ "width": "688px" }, 1000, 'swing');
+      });
+    </script>
+  </div>
+  <!-- 메인 -->
+  <section id="section01">
+    <p class="title">YYMIM<br>PORTFOLIO</p>
+  </section>
+  </section>
+  <!-- 간단 인사 -->
+  <section id="section02">
+    <div class="text_wrap">
+      <div class="text">
+        틀에 얽매이지 않고 끊임없이 성장하며, <br>
+        <br>
+        새로운 기술을 능동적으로 수용하여 <br>
+        제 역량을 극대화하고, <br>
+        회사에 가치 있는 솔루션을 제공하는 개발자가 되겠습니다. <br>
+        <br><br>
+        사용자 경험을 최우선으로 생각하며, <br>
+        직관적인 UI와 최적화된 UX를 구현하여 <br>
+        누구나 쉽고 만족스럽게 사용할 수 있는 <br>
+        완성도 높은 웹 서비스를 만드는 것을 목표로 합니다.
+      </div>
+    </div>
+    <div class="ocean">
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+  </section>
+
+  <section id="section03">
+    <div class="content_wrapper">
+      <div class="section_title">
+        SKILLS
+      </div>
+      <div class="content">
+        <ul>
+          <li>
+            <div class="text_box">
+              <div class="title">HTML, CSS</div>
+              <div class="text">HTML과 CSS를 기본으로 사용하고있습니다.</div>
+            </div>
+          </li><li>
+            <div class="text_box">
+              <div class="title">PHP</div>
+              <div class="text">백엔드와의 협업을 위해 PHP에 맞추어 코딩합니다.</div>
+            </div>
+          </li><li>
+            <div class="text_box">
+              <div class="title">JAVASCRIPT</div>
+              <div class="text">동적인 기능을 구현하기 위하여 JAVASCRIPT를 사용합니다.</div>
+            </div>
+          </li><li>
+            <div class="text_box">
+              <div class="title">NEXACRO</div>
+              <div class="text">대학 관리자페이지를 작업하기 위해 NEXACRO를 사용하였습니다.</div>
+            </div>
+          </li><li>
+            <div class="text_box">
+              <div class="title">SQL</div>
+              <div class="text">데이터베이스의 활용을 위해 SQL을 사용합니다.</div>
+            </div>
+          </li><li>
+            <div class="text_box">
+              <div class="title">Git</div>
+              <div class="text">코드 형상관리를 위하여 깃랩,깃허브를 사용합니다.</div>
+            </div>
+          </li><li>
+            <div class="text_box">
+              <div class="title">FIGMA</div>
+              <div class="text">디자인작업을 위하여 피그마를 사용합니다.</div>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="section04">
+    <div class="section_title">
+      WEBSITE
+    </div>
+    <div class="content_wrapper">
+      <ul>
+        <li>
+          <a href="#" target="_blank">
+            <img src="./img/web_image01.png" alt="웹사이트 이미지">
+            <div class="mo_image mo_image01"></div>
+          </a>
+        </li><li>
+          <a href="#" target="_blank">
+            <img src="./img/web_image02.png" alt="웹사이트 이미지">
+            <div class="mo_image mo_image02"></div>
+          </a>
+        </li><li>
+          <a href="#" target="_blank">
+            <img src="./img/web_image03.png" alt="웹사이트 이미지">
+            <div class="mo_image mo_image03"></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/aos.js"></script>
+  <script src="./js/swiper.min.js"></script>
+</body>
+</html>
+=======
+---
+layout: default
+---
+{% include hero.html %}
+
+<div class="container">
+	<div class="row">
+		<div class="col col-12">
+			{% if site.posts.size > 0 %}
+				<h4 class="lates-title">Posts</h4>
+			{% endif %}
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+	{% if site.posts.size > 0 %}
+		{% for post in paginator.posts %}
+			{% include article-content.html %}
+		{% endfor %}
+	{% endif %}
+	</div>
+</div>
+{% include pagination.html %}
+>>>>>>> 2f12c99ebafe6aed75a10a6860f7842c554694ce
